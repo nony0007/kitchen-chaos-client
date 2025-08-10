@@ -1,0 +1,14 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#1a1a1a;color:#fff;font-family:sans-serif;overflow:hidden}
+#game{position:fixed;inset:0;display:block;z-index:0}
+#ui{position:fixed;inset:0;z-index:10}
+#hud{position:fixed;top:12px;left:12px;display:flex;gap:10px;align-items:center;
+  background:rgba(0,0,0,.5);padding:10px;border-radius:14px}
+.brand{font-weight:bold}
+.stat{opacity:.95}
+.pill{margin-left:8px;font-size:12px;padding:4px 8px;border-radius:999px;background:#333}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.9)}
+.card{background:#222;padding:20px;border-radius:10px}
+.card input,.card button{width:100%;margin:5px 0;padding:10px;border-radius:8px;border:0}
+.card button{background:#f90;color:#000;font-weight:bold;cursor:pointer}
+.hidden{display:none}

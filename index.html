@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitchen Chaos 🍳</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="hud">
+      <div class="brand">🍳 Kitchen Chaos</div>
+      <div class="stat">Player: <span id="playerName">...</span></div>
+      <div class="stat">Players Online: <span id="onlineCount">1</span></div>
+      <div id="connStatus" class="pill">connecting…</div>
+    </div>
+    <div id="nameModal" class="modal">
+      <div class="card">
+        <h1>🍳 Kitchen Chaos</h1>
+        <p>Enter a nickname to join.</p>
+        <input id="nameInput" placeholder="Your nickname" maxlength="16" />
+        <input id="serverInput" placeholder="Server URL (optional)"
+         value="https://your-render-server.onrender.com" />
+        <button id="joinBtn">Join Kitchen</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
